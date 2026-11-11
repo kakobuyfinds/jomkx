@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="theme-color" content="#32264c">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <title>TigBuy spreadsheet: categorie, taglie e guida ai controlli</title>
+  <meta name="description" content="Esplora TigBuy spreadsheet con una guida in italiano: categorie, misure, foto QC e costi da verificare. Scopri i cataloghi su Hipobuyfind.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:title" content="TigBuy spreadsheet — Scegli con più criterio">
+  <meta property="og:description" content="Una guida indipendente per confrontare categorie, taglie, foto e dettagli prima di acquistare.">
+  <meta property="og:image" content="https://si.geilicdn.com/open1648936853-1234478995-27fe00000193e88e572c0a232357_900_900.jpg">
+  <meta property="og:image:alt" content="Sneakers bianche con Swoosh verde, presentate come Nike Air Force 1 nel catalogo di origine">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="TigBuy spreadsheet: una guida pratica in italiano">
+  <meta name="twitter:description" content="Categorie, guida alle taglie, controlli fotografici e preparazione del preventivo.">
+  <meta name="twitter:image" content="https://si.geilicdn.com/open1648936853-1234478995-27fe00000193e88e572c0a232357_900_900.jpg">
+  <link rel="preconnect" href="https://si.geilicdn.com">
+  <link rel="dns-prefetch" href="//si.geilicdn.com">
+
+  <!--
+    File: index.html
+    Ricerca preliminare: richiesta Bing per "TigBuy spreadsheet".
+    La pagina restituita non ha consentito di verificare dieci risultati
+    organici della prima pagina; non viene dichiarata una raccolta completa.
+    I temi editoriali sono stati confrontati con risultati web disponibili:
+    tigbuy.app, findhaul.com/finds/tigbuy,
+    cnfanssheet.com/tigbuy-spreadsheet,
+    sugargoo.tips/tigbuy-spreadsheet.
+    Non sono riprodotti prezzi, commissioni o promesse operative delle fonti.
+    Le immagini sono esempi del catalogo di destinazione, non foto QC.
+    Non è specificato un canonical perché l'URL di pubblicazione non è noto.
+  -->
+
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f6f3ed;
+      --white: #fffefa;
+      --ink: #282333;
+      --muted: #605a69;
+      --purple: #32264c;
+      --accent: #dbec96;
+      --line: #ddd6e2;
+      --lavender: #eae2f2;
+      --radius: 20px;
+      --max: 1180px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-underline-offset: 4px; }
+    a:focus-visible, summary:focus-visible {
+      outline: 3px solid #7956ae;
+      outline-offset: 5px;
+    }
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      background: #eeece8;
+    }
+    h1, h2, h3, p, figure { margin: 0; }
+    h1, h2, h3 { line-height: 1.12; }
+    h1 { font-size: clamp(2.7rem, 5.6vw, 5rem); letter-spacing: -.055em; }
+    h2 { font-size: clamp(1.8rem, 3.2vw, 2.8rem); letter-spacing: -.035em; }
+    h3 { font-size: 1.25rem; letter-spacing: -.02em; }
+    p + p { margin-top: 14px; }
+    .wrap { width: min(var(--max), calc(100% - 40px)); margin-inline: auto; }
+    .topline {
+      background: var(--purple);
+      color: #fff;
+      padding: 9px 20px;
+      text-align: center;
+      font-size: .78rem;
+      letter-spacing: .04em;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding-block: 24px;
+    }
+    .brand {
+      font-size: clamp(1.2rem, 3vw, 1.55rem);
+      font-weight: 850;
+      letter-spacing: -.055em;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .header-note { color: var(--muted); font-size: .83rem; }
+    .mini-link { font-size: .88rem; font-weight: 750; white-space: nowrap; }
+    .category-section {
+      padding: 22px;
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+    }
+    .category-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 16px;
+      margin-bottom: 15px;
+    }
+    .category-head h2 { font-size: 1rem; letter-spacing: 0; }
+    .category-head p { font-size: .8rem; color: var(--muted); }
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 8px;
+    }
+    .categories a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      padding: 12px;
+      border: 1px solid var(--line);
+      border-radius: 9px;
+      text-decoration: none;
+      font-size: .8rem;
+      font-weight: 700;
+      overflow-wrap: anywhere;
+    }
+    .categories a:hover { background: var(--lavender); border-color: #b9a8cb; }
+    .categories span { color: #79698e; }
+    .hero {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 56px;
+      align-items: center;
+      padding-block: 58px;
+    }
+    .eyebrow {
+      color: #65507f;
+      font-size: .74rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      margin-bottom: 18px;
+    }
+    .hero h1 span { display: block; color: #69518a; }
+    .lead { font-size: 1.08rem; color: var(--muted); margin-top: 24px; max-width: 57ch; }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      min-height: 48px;
+      padding: 13px 22px;
+      background: var(--purple);
+      border: 1px solid var(--purple);
+      color: #fff;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 750;
+      font-size: .9rem;
+    }
+    .button:hover { background: #4e3a6f; }
+    .hero .button { margin-top: 25px; }
+    .small { font-size: .8rem; color: var(--muted); }
+    .hero .small { margin-top: 12px; }
+    .hero-visual {
+      background: var(--lavender);
+      padding: 19px;
+      border-radius: 110px 20px 20px 20px;
+      position: relative;
+    }
+    .hero-visual img {
+      width: 100%;
+      aspect-ratio: 1;
+      object-fit: contain;
+      border-radius: 90px 10px 10px 10px;
+    }
+    .hero-visual figcaption {
+      padding: 17px 6px 4px;
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      font-size: .8rem;
+    }
+    .label {
+      display: inline-block;
+      padding: 4px 10px;
+      background: var(--accent);
+      border-radius: 30px;
+      font-size: .7rem;
+      font-weight: 800;
+      letter-spacing: .04em;
+    }
+    .answer {
+      display: grid;
+      grid-template-columns: .65fr 1.35fr;
+      gap: 40px;
+      background: var(--purple);
+      color: #fff;
+      padding: 35px;
+      border-radius: var(--radius);
+    }
+    .answer h2 { font-size: 1.7rem; }
+    .answer p { color: #ece5f4; }
+    .answer strong { color: var(--accent); }
+    .section { padding-top: 70px; }
+    .section-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 30px;
+      margin-bottom: 27px;
+    }
+    .section-head p { color: var(--muted); max-width: 46ch; font-size: .93rem; }
+    .gallery { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+    .card { background: var(--white); border: 1px solid var(--line); border-radius: 16px; overflow: hidden; }
+    .card > a { display: block; }
+    .card img { width: 100%; aspect-ratio: 1; object-fit: contain; }
+    .card-body { padding: 23px; }
+    .card-body .eyebrow { margin-bottom: 10px; font-size: .66rem; }
+    .card-body p { margin-top: 13px; color: var(--muted); font-size: .91rem; }
+    .card-body a { display: inline-block; margin-top: 18px; font-weight: 750; font-size: .85rem; }
+    .image-note { margin-top: 16px; max-width: 100ch; }
+    .editorial { display: grid; grid-template-columns: .65fr 1.35fr; gap: 55px; }
+    .editorial-intro p { color: var(--muted); margin-top: 20px; }
+    .article { border-top: 1px solid var(--line); padding-block: 26px; }
+    .article:first-child { padding-top: 0; border-top: 0; }
+    .article h3 { margin-bottom: 15px; }
+    .article p { color: var(--muted); font-size: .96rem; }
+    .article ul { padding-left: 20px; color: var(--muted); font-size: .94rem; margin-bottom: 0; }
+    .article li + li { margin-top: 7px; }
+    .table-box { overflow-x: auto; border: 1px solid var(--line); border-radius: 14px; background: var(--white); }
+    table { width: 100%; border-collapse: collapse; font-size: .92rem; }
+    caption { text-align: left; padding: 20px; font-weight: 800; background: var(--lavender); }
+    th, td { text-align: left; padding: 17px 20px; vertical-align: top; }
+    thead { background: #f2edf6; }
+    tbody tr + tr { border-top: 1px solid var(--line); }
+    tbody th { width: 24%; }
+    .cost-note {
+      padding: 22px 25px;
+      margin-top: 16px;
+      border-left: 4px solid #77608e;
+      background: #eae4ee;
+      border-radius: 0 12px 12px 0;
+      font-size: .93rem;
+    }
+    .faq-layout { display: grid; grid-template-columns: .65fr 1.35fr; gap: 55px; }
+    .faq-layout .small { margin-top: 20px; }
+    details { border-top: 1px solid var(--line); }
+    details:last-child { border-bottom: 1px solid var(--line); }
+    summary { padding: 20px 5px; font-weight: 750; cursor: pointer; }
+    details p { padding: 0 5px 21px; color: var(--muted); font-size: .95rem; }
+    .closing {
+      margin-block: 65px 35px;
+      border-radius: var(--radius);
+      background: var(--accent);
+      padding: 35px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+    .closing h2 { font-size: 1.8rem; }
+    .closing p { margin-top: 12px; max-width: 62ch; font-size: .94rem; }
+    .closing .button { flex-shrink: 0; }
+    footer { border-top: 1px solid var(--line); padding-block: 28px 40px; }
+    .footer-row { display: flex; justify-content: space-between; gap: 20px; align-items: baseline; }
+    footer p { margin-top: 15px; color: var(--muted); font-size: .78rem; max-width: 110ch; }
+    @media (max-width: 950px) {
+      .categories { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .hero { gap: 30px; }
+      .header-note { display: none; }
+      .editorial, .faq-layout { grid-template-columns: 1fr 1.6fr; gap: 30px; }
+      .gallery { gap: 12px; }
+      .card-body { padding: 18px; }
+      .closing { align-items: start; flex-direction: column; }
+    }
+    @media (max-width: 680px) {
+      .wrap { width: calc(100% - 28px); }
+      .topline { font-size: .68rem; }
+      .header { padding-block: 20px; gap: 10px; }
+      .mini-link { font-size: .75rem; }
+      .category-section { padding: 16px; }
+      .category-head { display: block; }
+      .category-head p { margin-top: 7px; }
+      .categories { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .categories a { min-height: 48px; font-size: .76rem; }
+      .hero { grid-template-columns: 1fr; padding-block: 35px; gap: 30px; }
+      .hero-visual { max-width: 470px; width: 100%; margin-inline: auto; }
+      .answer, .editorial, .faq-layout { grid-template-columns: 1fr; gap: 25px; }
+      .answer { padding: 26px; }
+      .section { padding-top: 46px; }
+      .section-head { align-items: start; flex-direction: column; gap: 15px; }
+      .gallery { grid-template-columns: 1fr; gap: 20px; }
+      .card { display: grid; grid-template-columns: .8fr 1.2fr; align-items: center; }
+      .card img { aspect-ratio: 1; }
+      .card-body { padding: 17px; }
+      .card-body h3 { font-size: 1.05rem; }
+      .card-body p { font-size: .83rem; margin-top: 9px; }
+      .card-body a { margin-top: 12px; font-size: .8rem; }
+      .card-body .eyebrow { font-size: .6rem; }
+      th, td { padding: 13px; min-width: 115px; font-size: .83rem; }
+      .closing { padding: 26px; margin-top: 45px; }
+      .footer-row { flex-wrap: wrap; gap: 10px; }
+    }
+    @media (prefers-reduced-motion: no-preference) {
+      .button, .categories a { transition: background-color .15s ease; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "#pagina",
+        "name": "TigBuy spreadsheet: categorie, taglie e guida ai controlli",
+        "description": "Guida indipendente in italiano per confrontare categorie, misure, foto QC e voci di costo prima di acquistare.",
+        "inLanguage": "it",
+        "about": {
+          "@type": "Thing",
+          "name": "TigBuy spreadsheet"
+        },
+        "hasPart": [
+          {"@id": "#articolo-misure"},
+          {"@id": "#articolo-qc"},
+          {"@id": "#articolo-preventivo"},
+          {"@id": "#domande"}
+        ]
+      },
+      {
+        "@type": "Article",
+        "@id": "#articolo-misure",
+        "headline": "Guida taglie: confronta misure, non soltanto lettere",
+        "inLanguage": "it",
+        "description": "Come confrontare lunghezza del piede, soletta, torace, spalle, maniche e vestibilità con un capo già posseduto.",
+        "isPartOf": {"@id": "#pagina"}
+      },
+      {
+        "@type": "Article",
+        "@id": "#articolo-qc",
+        "headline": "TigBuy QC: le fotografie che servono davvero",
+        "inLanguage": "it",
+        "description": "Come distinguere immagini del venditore e foto del singolo articolo, controllando misure, cuciture e accessori.",
+        "isPartOf": {"@id": "#pagina"}
+      },
+      {
+        "@type": "Article",
+        "@id": "#articolo-preventivo",
+        "headline": "Spedizione in Italia: prepara un preventivo completo",
+        "inLanguage": "it",
+        "description": "Quali voci verificare per confrontare prodotto, trasporto, commissioni, cambio e possibili oneri di importazione.",
+        "isPartOf": {"@id": "#pagina"}
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "#domande",
+        "inLanguage": "it",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Che cos'è un TigBuy spreadsheet?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "È una raccolta organizzata di riferimenti a prodotti, spesso suddivisa per categoria e accompagnata da link, misure o note. Le informazioni vanno confrontate con l'inserzione corrente prima di acquistare."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Questa pagina è il sito ufficiale TigBuy?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. È una guida indipendente. I pulsanti generali portano a Hipobuyfind; i collegamenti delle categorie aprono le rispettive sezioni di Hipobuyfind."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Le immagini dimostrano l'autenticità degli articoli?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Le immagini provengono da inserzioni del catalogo e illustrano lo stile dichiarato. Non certificano autenticità, provenienza, disponibilità o qualità e non sono foto QC del tuo ordine."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Come scelgo la taglia di scarpe e abbigliamento?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Confronta la tabella del venditore con misure reali: lunghezza del piede e soletta per le scarpe; torace, spalle, lunghezza e maniche per i capi. Non affidarti soltanto alla taglia abituale."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Il prezzo dell'articolo comprende la spedizione in Italia?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Non darlo per scontato. Verifica separatamente trasporto interno e internazionale, eventuali commissioni, conversione valutaria, IVA, dazi e costi di gestione applicabili."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Che cosa faccio se un link non funziona?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Cerca nuovamente il prodotto nella categoria pertinente e confronta identificativo, venditore e variante. Non considerare una vecchia foto o una riga salvata come prova di disponibilità."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/jomkx/">
+</head>
+<body>
+  <div class="topline">GUIDA INDIPENDENTE IN ITALIANO · CATEGORIE, MISURE E DETTAGLI</div>
+
+  <header class="wrap header">
+    <a class="brand" href="https://www.hipobuyfind.com" aria-label="Vai a hipobuyfind.com">hipobuyfind.com</a>
+    <span class="header-note">Un taccuino per scegliere con criterio.</span>
+    <a class="mini-link" href="https://www.hipobuyfind.com">Apri il catalogo ↗</a>
+  </header>
+
+  <main class="wrap">
+    <section class="category-section" aria-labelledby="categorie-titolo">
+      <div class="category-head">
+        <h2 id="categorie-titolo">Parti dalla categoria</h2>
+        <p>Collegamenti diretti alle sezioni di Hipobuyfind</p>
+      </div>
+      <nav class="categories" aria-label="Categorie di prodotti">
+        <a href="https://hipobuyfind.com/category-911-Shoes.html">Shoes <span aria-hidden="true">↗</span></a>
+        <a href="https://hipobuyfind.com/category-912-Hoodies%2FSweaters.html">Hoodies/Sweaters <span aria-hidden="true">↗</span></a>
+        <a href="https://hipobuyfind.com/category-913-T-Shirts.html">T-Shirts <span aria-hidden="true">↗</span></a>
+        <a href="https://hipobuyfind.com/category-914-Jackets.html">Jackets <span aria-hidden="true">↗</span></a>
+        <a href="https://hipobuyfind.com/category-915-Pants%2FShorts.html">Pants/Shorts <span aria-hidden="true">↗</span></a>
+        <a href="https://hipobuyfind.com/category-916-Headwear.html">Headwear <span aria-hidden="true">↗</span></a>
+        <a href="https://hipobuyfind.com/category-917-Sets.html">Sets <span aria-hidden="true">↗</span></a>
+        <a href="https://hipobuyfind.com/category-918-underwear%2Funderpants.html">Underwear/underpants <span aria-hidden="true">↗</span></a>
+        <a href="https://hipobuyfind.com/category-919-Jersey.html">Jersey <span aria-hidden="true">↗</span></a>
+        <a href="https://hipobuyfind.com/category-920-Accessories.html">Accessories <span aria-hidden="true">↗</span></a>
+      </nav>
+    </section>
+
+    <section class="hero" aria-labelledby="titolo">
+      <div>
+        <p class="eyebrow">Il taccuino delle scelte consapevoli</p>
+        <h1 id="titolo">TigBuy spreadsheet<span>Dal colpo d'occhio ai dettagli.</span></h1>
+        <p class="lead">Una bella foto è un punto di partenza. Per scegliere servono anche misure, materiali e informazioni verificabili. Questa guida ti aiuta a organizzare la ricerca e a confrontare ciò che conta.</p>
+        <a class="button" href="https://www.hipobuyfind.com">Esplora Hipobuyfind <span aria-hidden="true">↗</span></a>
+        <p class="small">Guida indipendente: nessuna affiliazione ufficiale con TigBuy o con i marchi illustrati.</p>
+      </div>
+      <figure class="hero-visual">
+        <img
+          src="https://si.geilicdn.com/open1648936853-1234478995-27fe00000193e88e572c0a232357_900_900.jpg"
+          alt="Sneakers bianche con Swoosh verde, presentate come Nike Air Force 1 nel catalogo di origine"
+          width="900"
+          height="900"
+          loading="eager"
+          fetchpriority="high"
+          decoding="async">
+        <figcaption>
+          <span>01 / Sneakers e proporzioni</span>
+          <span class="label">ISPIRAZIONE VISIVA</span>
+        </figcaption>
+      </figure>
+    </section>
+
+    <section class="answer" aria-labelledby="risposta-titolo">
+      <h2 id="risposta-titolo">A cosa serve uno spreadsheet?</h2>
+      <div>
+        <p>Un <strong>TigBuy spreadsheet</strong> raccoglie riferimenti a prodotti in un formato consultabile: categoria, link e, quando presenti, informazioni su variante, taglia o fotografie. Aiuta a creare una lista di confronto; non sostituisce la scheda del venditore.</p>
+        <p>Per orientarti, affronta quattro temi: <strong>TigBuy finds</strong> per la selezione, <strong>TigBuy guida taglie</strong> per le misure, <strong>TigBuy QC</strong> per i controlli e <strong>TigBuy spedizione Italia</strong> per preparare il preventivo.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="ispirazioni-titolo">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Tre direzioni da esplorare</p>
+          <h2 id="ispirazioni-titolo">Il dettaglio cambia la scelta.</h2>
+        </div>
+        <p>Abbigliamento, copricapi e gioielli richiedono controlli diversi. Parti dallo stile, poi passa alle caratteristiche concrete.</p>
+      </div>
+
+      <div class="gallery">
+        <article class="card">
+          <a href="https://www.hipobuyfind.com" aria-label="Esplora l'abbigliamento su Hipobuyfind">
+            <img
+              src="https://si.geilicdn.com/open1858585309-1234478995-30c2000001977296126a0a8115c2_2560_2560.jpg"
+              alt="T-shirt presentata come Louis Vuitton Equipe, nei colori bianco, nero e rosso"
+              width="2560"
+              height="2560"
+              loading="lazy"
+              decoding="async">
+          </a>
+          <div class="card-body">
+            <p class="eyebrow">02 / Abbigliamento</p>
+            <h3>Grafica e vestibilità</h3>
+            <p>Per una T-shirt con stampa, confronta larghezza del torace, lunghezza e posizione del motivo sul capo.</p>
+            <a href="https://www.hipobuyfind.com">Esplora il catalogo ↗</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <a href="https://www.hipobuyfind.com" aria-label="Esplora i copricapi su Hipobuyfind">
+            <img
+              src="https://si.geilicdn.com/open1623462477-1234478995-7a8100000194c2482f090a8115b5_1200_1200.jpg"
+              alt="Cappellino beige con motivo GG e banda rossa e verde, presentato come Gucci GG Supreme"
+              width="1200"
+              height="1200"
+              loading="lazy"
+              decoding="async">
+          </a>
+          <div class="card-body">
+            <p class="eyebrow">03 / Copricapi</p>
+            <h3>Forma e regolazione</h3>
+            <p>Un cappellino va confrontato per circonferenza, profondità della calotta e sistema di chiusura.</p>
+            <a href="https://www.hipobuyfind.com">Scopri altre idee ↗</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <a href="https://www.hipobuyfind.com" aria-label="Esplora gli accessori su Hipobuyfind">
+            <img
+              src="https://si.geilicdn.com/open1817836269-1234478995-121a0000019769a8d36e0a23b491_800_800.jpg"
+              alt="Bracciale dorato con pendente a stella e dettagli floreali, presentato come Dior nell'inserzione"
+              width="800"
+              height="800"
+              loading="lazy"
+              decoding="async">
+          </a>
+          <div class="card-body">
+            <p class="eyebrow">04 / Accessori</p>
+            <h3>Materiali e finiture</h3>
+            <p>Per un bracciale, verifica lunghezza, chiusura e composizione dichiarata, soprattutto in caso di sensibilità cutanea.</p>
+            <a href="https://www.hipobuyfind.com">Confronta gli accessori ↗</a>
+          </div>
+        </article>
+      </div>
+      <p class="small image-note">Immagini tratte da inserzioni del catalogo di destinazione. I nomi dei marchi descrivono la presentazione delle inserzioni: non costituiscono una verifica di autenticità, disponibilità o provenienza. Le foto non documentano un tuo ordine.</p>
+    </section>
+
+    <section class="section editorial" aria-labelledby="guide-titolo">
+      <div class="editorial-intro">
+        <p class="eyebrow">Guide pratiche</p>
+        <h2 id="guide-titolo">Meno supposizioni.<br>Più informazioni utili.</h2>
+        <p>Quando consulti una raccolta di TigBuy finds, salva anche i dettagli che permettono di riconoscere lo stesso articolo in seguito.</p>
+        <p class="small">Una lista breve e documentata è più facile da confrontare di decine di immagini senza riferimenti.</p>
+      </div>
+
+      <div>
+        <article class="article" id="articolo-misure">
+          <p class="eyebrow">Articolo 01 / Taglie</p>
+          <h3>Guida taglie: confronta misure, non soltanto lettere</h3>
+          <p>Per cercare scarpe nel TigBuy spreadsheet, parti dalla lunghezza del piede in centimetri e dalla tabella del singolo venditore. La misura della soletta è un riferimento diverso dalla lunghezza del piede: chiedi come è stata rilevata e confrontala con una scarpa che indossi comodamente.</p>
+          <p>Per felpe oversize, maglioni e T-shirt, misura un capo già presente nel tuo guardaroba. Confronta larghezza del torace, spalle, lunghezza e maniche. La dicitura “oversize” descrive un'intenzione di vestibilità, ma non fornisce una misura.</p>
+          <ul>
+            <li>Per giacche e capispalla, considera lo spazio necessario per gli strati sottostanti.</li>
+            <li>Per pantaloni e shorts, controlla vita, fianchi, cavallo e lunghezza interna.</li>
+            <li>Per set coordinati, verifica separatamente la tabella della parte superiore e di quella inferiore.</li>
+            <li>Per intimo e maglie sportive, leggi composizione, elasticità e condizioni di reso indicate.</li>
+          </ul>
+        </article>
+
+        <article class="article" id="articolo-qc">
+          <p class="eyebrow">Articolo 02 / Fotografie</p>
+          <h3>TigBuy QC: le fotografie che servono davvero</h3>
+          <p>Una foto del venditore presenta il prodotto; una foto di controllo dovrebbe mostrare il singolo articolo ricevuto. Prima di approvare una spedizione, verifica quali immagini siano effettivamente disponibili e se corrispondano al colore, alla taglia e alla variante ordinati.</p>
+          <p>Per le sneakers, osserva entrambi i lati, suole, cuciture ed etichette. Per l'abbigliamento, controlla stampa, bordi, zip e misure con un metro visibile. Per cappelli e accessori, chiedi dettagli della chiusura, delle parti metalliche e di eventuali difetti evidenti.</p>
+          <p>Illuminazione e schermo possono modificare la resa del colore. Le foto QC aiutano a riconoscere differenze visibili, ma non certificano autenticità, composizione dei materiali o durata nel tempo.</p>
+        </article>
+
+        <article class="article" id="articolo-preventivo">
+          <p class="eyebrow">Articolo 03 / Budget</p>
+          <h3>Spedizione in Italia: prepara un preventivo completo</h3>
+          <p>Una ricerca su TigBuy spedizione Italia dovrebbe partire dai dati del tuo pacco: destinazione, peso, dimensioni e contenuto. Chiedi se il preventivo utilizzi il peso reale o quello volumetrico e quali condizioni si applichino alla linea proposta.</p>
+          <p>Per confrontare due preventivi, usa gli stessi articoli e lo stesso servizio. Annota valuta, cambio applicato, trasporto interno, spedizione internazionale ed eventuali costi di pagamento o gestione. Verifica anche gli oneri di importazione applicabili alla tua situazione.</p>
+          <p>Non assumere che una riga dello spreadsheet includa il costo finale. Disponibilità, commissioni, termini di deposito e possibilità di reso devono essere confermati direttamente prima di pagare.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="confronto-titolo">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Il tuo metodo di confronto</p>
+          <h2 id="confronto-titolo">Cosa annotare nella shortlist.</h2>
+        </div>
+        <p>Queste informazioni rendono una selezione di prodotti più utile anche quando i link o le inserzioni cambiano.</p>
+      </div>
+      <div class="table-box" role="region" aria-label="Tabella dei controlli prima dell'acquisto" tabindex="0">
+        <table>
+          <caption>Dall'inserzione alla decisione: una scheda essenziale</caption>
+          <thead>
+            <tr>
+              <th scope="col">Voce</th>
+              <th scope="col">Che cosa salvare</th>
+              <th scope="col">Che cosa verificare</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Identità del prodotto</th>
+              <td>Link originale, identificativo e nome del venditore.</td>
+              <td>Che l'inserzione sia ancora attiva e corrisponda all'articolo desiderato.</td>
+            </tr>
+            <tr>
+              <th scope="row">Variante</th>
+              <td>Colore, taglia, codice e accessori inclusi.</td>
+              <td>Che immagini e opzioni selezionate mostrino la stessa versione.</td>
+            </tr>
+            <tr>
+              <th scope="row">Misure</th>
+              <td>Tabella taglie e misure in centimetri.</td>
+              <td>Metodo di misurazione e confronto con un articolo già posseduto.</td>
+            </tr>
+            <tr>
+              <th scope="row">Materiali</th>
+              <td>Composizione dichiarata e istruzioni di cura.</td>
+              <td>Informazioni mancanti, finiture e compatibilità con le proprie esigenze.</td>
+            </tr>
+            <tr>
+              <th scope="row">Controlli fotografici</th>
+              <td>Foto del singolo articolo e dettagli richiesti.</td>
+              <td>Difetti visibili, misure, etichette e corrispondenza della variante.</td>
+            </tr>
+            <tr>
+              <th scope="row">Condizioni e totale</th>
+              <td>Preventivo datato, costi separati e condizioni di reso.</td>
+              <td>Voci escluse, scadenze e procedura per contestare eventuali problemi.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="cost-note"><strong>Prima di confermare:</strong> il costo del prodotto è solo una voce del budget. Per una decisione informata servono un totale comprensibile e condizioni leggibili, non una promessa generica di risparmio.</p>
+    </section>
+
+    <section class="section faq-layout" aria-labelledby="faq-titolo">
+      <div>
+        <p class="eyebrow">Risposte dirette</p>
+        <h2 id="faq-titolo">Domande frequenti.</h2>
+        <p class="small">Le risposte chiariscono il ruolo della guida e i controlli da svolgere prima di un acquisto.</p>
+      </div>
+      <div id="domande">
+        <details open>
+          <summary>Che cos'è un TigBuy spreadsheet?</summary>
+          <p>È una raccolta organizzata di riferimenti a prodotti, spesso suddivisa per categoria e accompagnata da link, misure o note. Le informazioni vanno confrontate con l'inserzione corrente prima di acquistare.</p>
+        </details>
+        <details>
+          <summary>Questa pagina è il sito ufficiale TigBuy?</summary>
+          <p>No. È una guida indipendente. I pulsanti generali portano a Hipobuyfind; i collegamenti delle categorie aprono le rispettive sezioni di Hipobuyfind.</p>
+        </details>
+        <details>
+          <summary>Le immagini dimostrano l'autenticità degli articoli?</summary>
+          <p>No. Le immagini provengono da inserzioni del catalogo e illustrano lo stile dichiarato. Non certificano autenticità, provenienza, disponibilità o qualità e non sono foto QC del tuo ordine.</p>
+        </details>
+        <details>
+          <summary>Come scelgo la taglia di scarpe e abbigliamento?</summary>
+          <p>Confronta la tabella del venditore con misure reali: lunghezza del piede e soletta per le scarpe; torace, spalle, lunghezza e maniche per i capi. Non affidarti soltanto alla taglia abituale.</p>
+        </details>
+        <details>
+          <summary>Il prezzo dell'articolo comprende la spedizione in Italia?</summary>
+          <p>Non darlo per scontato. Verifica separatamente trasporto interno e internazionale, eventuali commissioni, conversione valutaria, IVA, dazi e costi di gestione applicabili.</p>
+        </details>
+        <details>
+          <summary>Che cosa faccio se un link non funziona?</summary>
+          <p>Cerca nuovamente il prodotto nella categoria pertinente e confronta identificativo, venditore e variante. Non considerare una vecchia foto o una riga salvata come prova di disponibilità.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="closing" aria-labelledby="prossimo-titolo">
+      <div>
+        <h2 id="prossimo-titolo">Scegli una categoria. Costruisci la tua lista.</h2>
+        <p>Esplora Hipobuyfind e conserva soltanto gli articoli per cui riesci a confrontare misure, caratteristiche e condizioni.</p>
+      </div>
+      <a class="button" href="https://www.hipobuyfind.com">Visita Hipobuyfind <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    <div class="footer-row">
+      <a class="brand" href="https://www.hipobuyfind.com">hipobuyfind.com</a>
+      <span class="small">TigBuy spreadsheet · Guida in italiano</span>
+    </div>
+    <p>Risorsa editoriale indipendente. Non è il sito ufficiale TigBuy e non gestisce ordini, pagamenti o spedizioni. Nike, Louis Vuitton, Gucci e Dior sono marchi dei rispettivi titolari; la loro menzione non implica affiliazione o approvazione. Verifica inserzioni e condizioni direttamente presso il servizio utilizzato.</p>
+  </footer>
+</body>
+</html>
